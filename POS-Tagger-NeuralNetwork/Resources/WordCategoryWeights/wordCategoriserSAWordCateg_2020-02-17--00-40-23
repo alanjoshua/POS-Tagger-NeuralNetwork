@@ -1,0 +1,6 @@
+scaleX1;0.01
+scaleX2;0.1
+scaleY1;6.0
+scaleY2;1.0
+learningRate;0.01
+lamda;1.0E-4

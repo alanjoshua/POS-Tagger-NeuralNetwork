@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-12">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Resources"/>
+	<classpathentry kind="lib" path="libs/jblas-1.2.4.jar"/>
+	<classpathentry kind="lib" path="libs/lingpipe-4.1.2.jar"/>
+	<classpathentry kind="lib" path="libs/pdfbox-2.0.18.jar"/>
+	<classpathentry kind="lib" path="libs/stanford-postagger-3.9.2.jar" sourcepath="libs/stanford-postagger-3.9.2-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/POS-Tagger-NeuralNetwork/libs/stanford-postagger-3.9.2-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
