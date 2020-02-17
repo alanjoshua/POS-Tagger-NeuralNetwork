@@ -2150,8 +2150,6 @@ public class NeuralNetwork implements Runnable {
 		@Override
 		protected Object doInBackground() throws Exception {
 			output.append("Loaded called");
-			w1 = IOUtils.getMatrixFromFile(IOUtils.getFileFromResourcesFolder("WordCategoryWeights/wordCategoriser" + "W1" + fin).getPath());
-			output.append(""+w1.rows);
 			w1 = IOUtils.getMatrixFromFile(ResourcePool.outputMode + "WordCategoryWeights/wordCategoriser" + "W1" + fin);
 			w2 = IOUtils.getMatrixFromFile(ResourcePool.outputMode + "WordCategoryWeights/wordCategoriser" + "W2" + fin);
 			w3 = IOUtils.getMatrixFromFile(ResourcePool.outputMode + "WordCategoryWeights/wordCategoriser" + "W3" + fin);

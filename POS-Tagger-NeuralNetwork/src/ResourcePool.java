@@ -16,7 +16,7 @@ public class ResourcePool {
 	private static boolean isTraining = false;
 	
 	public final static String outputJar = "./Resources/";
-	public final static String outputProject = "";
+	public final static String outputProject = "Resources/";
 	public static String outputMode = outputProject;
 
 	public static void setAITextField(JTextArea AITextField) {
