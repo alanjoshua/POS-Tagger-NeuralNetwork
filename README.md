@@ -17,10 +17,7 @@
 * Ability to change how often the model is refreshed on the screen
 * Ability to control learning parameters in real time
 
-## Usage
-
-* It make take from 10 seconds to a couple minutes to load depending on your computer's specs as right now the program has to load and compute the training data each time when the program is started.
-* Utility to pre calculate and pre-load parsed training data is in work. The code is already in place but this project is from 2 years ago so I have to figure out how the utility works. Until then, please bare with the loading time. 
+## Usage 
 
 ### GUI Controls
 
@@ -41,7 +38,20 @@
 ### Setting up as Eclipse project
 * Import the project to Eclipse using File > import > git > projects from Git using smart import
 * In the last page of the import wizard, select "Search for Nested Projects" and make sure to select only "POS-Tagger-NeuralNetwork/POS-Tagger-NeuralNetwork".
-* Make sure the "Resources" folder in the root folder of the project is added to classpath.
+* Make sure the "Resources" folder in the root folder of the project is added to build path.
 * ResourcePool.outputMode should be set to ResourcePool.outputProject in the main method of the project (This should be already set by default)
 
 ### Exporting Jar file from Eclipse Project
+
+* Set ResourcePool.outputMode == ResourcePool.outputJar in the main method
+* Remove the Resources Folder from build path
+* Use the export wizard by right clicking the project > export > Java > Runnable Jar file
+* Select the output destination. I would recommend creating a new empty folder.
+* In the Library handling section, select the third option (Copy required libraries into a sub folder)
+* Once this is done successfully, make a copy of the Resources folder and place it in the same directory as the newly created Jar file
+* To make sure the project continues working, add the "Resources" folder to build path and set ResourcePool.outputMode == ResourcePool.outputProject in the main method
+
+### Miscellaneous
+
+* It may take from 10 seconds to a couple minutes to load depending on your computer's specs as right now the program has to load and compute the training data each time when the program is started.
+* Utility to pre calculate and pre-load parsed training data is in work. The code is already in place but this project is from 2 years ago so I have to figure out how the utility works. Until then, please bare with the loading time.
